@@ -33,7 +33,7 @@ jobs:
     - name: Build x64 release
       run: |
         cd example
-        npx react-native run-windows --release --no-packager --no-launch --logging
+        npx react-native run-windows --release --no-packager --no-launch
 
     - name: Start Appium server
       shell: powershell

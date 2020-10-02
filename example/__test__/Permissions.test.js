@@ -21,8 +21,6 @@ describe('Test App', () => {
       until.elementLocated(By2.nativeName('DOCUMENTS_LIBRARY:unavailable')),
     );
     await driver.wait(until.elementLocated(By2.nativeName('CONTACTS:denied')));
-    await driver.wait(
-      until.elementLocated(By2.nativeName('LOCATION:bloc ked')),
-    );
+    await driver.wait(until.elementLocated(By2.nativeName('LOCATION:blocked')));
   });
 });
