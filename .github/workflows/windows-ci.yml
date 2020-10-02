@@ -20,6 +20,11 @@ jobs:
       with:
         vs-version: 16.5
 
+    - name: Build module
+      run: |
+        yarn
+        yarn prepare
+
     - name: Install node modules
       run: |
         cd example
